@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+    <Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Protobuf ProtoRoot="Protos" Include="Protos/greet.proto" GrpcServices="Server" />
+        <Protobuf ProtoRoot="Protos" Include="Protos/greet.proto" GrpcServices="Server" AdditionalImportDirs="..\Contracts\Protos"/>
     </ItemGroup>
 
     <ItemGroup>
