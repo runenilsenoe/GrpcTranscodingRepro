@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Grpc.AspNetCore" Version="2.49.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Grpc.JsonTranscoding" Version="7.0.5"/>
+
+        <Protobuf ProtoRoot="Protos" Include="**/*.proto" GrpcServices="Server" />
+       <!-- <Protobuf ProtoRoot="Protos" Include="Protos\greet.proto" GrpcServices="Server"/>-->
+
+    </ItemGroup>
+
+</Project>
